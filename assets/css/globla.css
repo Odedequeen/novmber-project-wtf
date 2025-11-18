@@ -1,0 +1,64 @@
+:root {
+  /* TEXT COLORS */
+  --text-white: #ffffff;
+  --text-dark: #101828;              /* rgb(16,24,40) */
+  --text-success: #00a63e;           /* hsl(142,100%,33%) */
+  --text-warning: #e7a500;           /* hsl(43,100%,45%) */
+  --text-muted: #c5c9ce;             /* rgb(197,201,206) */
+
+  /* PLACEHOLDER */
+  --placeholder: #b5bdcc;            /* rgb(181,189,204) */
+
+  /* BRAND COLORS */
+  --primary: #3550f9;                /* rgb(53,80,249) */
+  --primary-light: hsl(231,78%,97%);
+
+  /* NEXT STEP BUTTON */
+  --next-step: #e7a500;              /* rgb(231,165,0) */
+
+  /* ENTER ACCOUNT */
+  --enter-account: #c5c9ce;          /* hsl(213,8%,57%) */
+
+  /* BACKGROUND */
+  --background: #f6f8f9;             /* rgb(246,248,249) */
+
+  /* CARD COLOR */
+  --card: #ffffff;
+
+  /* TERMS & SERVICE TEXT */
+  --terms: #6796fd;                  /* rgb(103, 150, 253) */
+ /*
+}
+
+
+
+
+
+
+
+
+
+
+/* body { 
+  color: rgb(255, 255, 255);
+}
+input-placeholder-color:{
+  
+rgb (181,189,204)
+#b5bdcc 
+}
+
+
+markbox-color= rgb (53,80,249);  
+#3550f9, hsl(231% 78% 97%);
+
+texl-color: hsb (220% 60% 15%);
+rgb(16, 24, 40); #101828
+
+hsl(142, 100%, 33%) ; #00a63e, rgb(0, 166, 62)
+
+next step: hsl(43, 100%, 45%);rgb(231, 165, 0); #e7a500,
+enter-account:hsl(213, 8%, 57%),rgb(197, 201, 206),#c5c9ce,
+background-color=hsl(200, 20%, 97%);#:f6f8f9,rgb(246, 248, 249),
+card-color:hsl(200, 20%, 97%);rgb(246, 248, 249);#f6f8f9
+/* terms-service-color :hsl(222, 96%, 90%);rgb(205, 220, 254),#cddcfe */
