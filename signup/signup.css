@@ -6,28 +6,44 @@
 
 }
 
+body {
+  background-color: #c5c9ce;
+  background-image: url(./image/background\ img.png);
+  background-position: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  font-size: 25px;
+}
+
 .page-containe {
   display: flex;
+  font-size: 16px;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   height: 100vh;
-  margin: 40px;
+  margin: 30px;
+  width: 100vw;
 }
 
 .card {
-  background-color: aqua;
-  box-shadow: 0 7px 10px rgb(117, 116, 116);
+  background-color: #f6f8f9;
+  box-shadow: 0 10px 10px rgb(117, 116, 116);
   align-items: center;
   border-radius: 15px;
   height: 100vh;
   width: 600px;
-  margin: 80px;
+  margin: 100px;
   padding: 20px;
+  color: #b5bdcc;
 
 }
 
 .task-master {
+  margin: 10px;
+  padding: 20px;
   justify-items: center;
   align-items: center;
 
@@ -35,94 +51,131 @@
 }
 
 .task-MASTER-IMG {
-  display: block;
-  width: 150px;
+  display: flex;
+  width: 100px;
 }
 
 
 h1 {
   text-decoration-color: #101828;
-
+  margin: 10px;
 }
 
 p {
   text-decoration-color: #c5c9ce;
-}
-
-.btn-toggle {
-  justify-content: center;
-  box-sizing: border-box;
-  border: 5px solid #b5bdcc;
-  border-radius: 15px;
-  width: 540px;
-  height: 80px;
-  text-align: center;
-  margin: 60px;
-  display: flex;
-  gap: 10rem;
+  fo;
 
 }
-
-
 
 .form-section {
-  justify-content: center;
-  align-content: center;
+  font-size: 16px;
+  margin: 40px;
+  padding: 25px;
+  width: 500px;
 
 }
 
+
+.toggle {
+  display: flex;
+  border: 3px solid #b5bdcc;
+  border-radius: 15px;
+  /* overflow: ; */
+  width: 100%;
+  /* Or any width you want */
+  height: 40px;
+
+}
+
+
+
+
+/* BOTH BUTTONS (links styled as buttons) */
+.toggle a {
+  flex: 1;
+  /* 50% width each */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+
+}
+
+/* ACTIVE BUTTON (Signup highlighted) */
+.toggle-btn-active {
+  background: #b5bdcc;
+  color: hsl(231, 78%, 97%);
+
+}
+
+
+/* INACTIVE BUTTON (Login) */
+.toggle-btn-inactive {
+  background: hsl(231, 78%, 97%);
+  ;
+  color: #333;
+}
+
+/* HOVER EFFECT (this will change color AND open page when clicked) */
+.toggle a:hover {
+  background: #b5bdcc;
+  color: hsl(231, 78%, 97%);
+  ;
+}
 
 .signup-input-1 {
-  .signup-input-1 {
-    width: 540px;
-    margin: 10px;
-  }
 
-  .input-label {
-    font-size: 14px;
-    color: #000;
-    margin-bottom: 5px;
-    display: block;
-  }
-
-  .input-box {
-    position: relative;
-    box-sizing: border-box;
-    border: 5px solid #b5bdcc;
-    border-radius: 15px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    background: #fff;
-    padding-left: 55px;
-    /* space for the icon */
-  }
-
-  .input-icon {
-    position: absolute;
-    left: 15px;
-    width: 30px;
-    height: 30px;
-  }
-
-  .name {
-    border: none;
-    outline: none;
-    font-size: 18px;
-    width: 100%;
-  }
-
-
-
-
-}
-
-.signup-input-2 { 
   width: 540px;
-  margin: 10px;
+  margin: 40px;
 }
 
-.input-label-2{
+.input-label {
+  font-size: 25px;
+  color: #000;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-box {
+  align-items: ;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #b5bdcc;
+  border-radius: 15px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding-left: 55px;
+  /* space for the icon */
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+
+}
+
+.name {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.signup-input-2 {
+  width: 540px;
+  margin: 30px;
+}
+
+.input-label-2 {
   font-size: 14px;
   color: #000;
   margin-bottom: 5px;
@@ -132,13 +185,14 @@ p {
 .input-box-2 {
   position: relative;
   box-sizing: border-box;
-  border: 5px solid #b5bdcc;
+  border: 3px solid #b5bdcc;
   border-radius: 15px;
   height: 80px;
   display: flex;
   align-items: center;
   background: #fff;
-  padding-left: 55px; /* space for the icon */
+  padding-left: 55px;
+  /* space for the icon */
 }
 
 .input-icon {
@@ -146,6 +200,7 @@ p {
   left: 15px;
   width: 30px;
   height: 30px;
+
 }
 
 .name {
@@ -155,10 +210,7 @@ p {
   width: 100%;
 }
 
-
-
-
-.signup-input-3  {
+.signup-input-3 {
   width: 540px;
   margin: 10px;
 }
@@ -166,20 +218,21 @@ p {
 .input-label {
   font-size: 14px;
   color: #000;
-  margin-bottom: 5px;
+  margin: 20px;
   display: block;
 }
 
 .input-box {
   position: relative;
   box-sizing: border-box;
-  border: 5px solid #b5bdcc;
+  border: 3px solid #b5bdcc;
   border-radius: 15px;
   height: 80px;
   display: flex;
   align-items: center;
   background: #fff;
-  padding-left: 55px; /* space for the icon */
+  padding-left: 55px;
+  /* space for the icon */
 }
 
 .input-icon {
@@ -197,27 +250,45 @@ p {
 }
 
 
-.two-btns {
+.action-btns {
   display: flex;
   gap: 2rem;
   justify-content: center;
   margin-top: 20px;
 }
 
-.help-btn {
+
+.help-btn-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   justify-content: center;
-  height: 50px;
+  height: 60px;
   width: 250px;
+  padding: 0 20px;
   text-align: center;
   border-radius: 15px;
+  border: none;
+  background-color: #b5bdcc;
+  box-shadow: 0 1px 10px#fff;
+}
 
+.help-btnimg {
+  width: 24px;
+  height: 24px;
 }
 
 .Create-account-btn {
   justify-content: center;
-  height: 50px;
+  height: 60px;
   width: 250px;
   text-align: center;
   border-radius: 15px;
+  background-color: #e7a500;
+  box-shadow: 0 7px 10px rgb(117, 116, 116);
+}
+
+.footer {
+  margin: 40px;
 
 }
