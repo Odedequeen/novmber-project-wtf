@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signin</title>
+
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../components/button/button.css" />
+    <link rel="stylesheet" href="../../components/input/input.css" />
+    <link rel="stylesheet" href="../../components/footer/footer.css" />
+    <link rel="stylesheet" href="../../components/toggle/toggle.css" />
+    <link rel="stylesheet" href="../../assets/font/font.css" />
+    <link rel="stylesheet" href="../../pages/signup/signup.css" />
+    <link rel="stylesheet" href="../../modules/auth/auth.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="card">
+        <div class="task-master">
+          <img
+            src="../../assets/image/box-mark-image.svg"
+            alt="logo"
+            class="task-MASTER-IMG"
+          />
+          <h1><span style="color: #101828">Join TaskMaster</span></h1>
+          <p>Create an account to boost your productivity</p>
+        </div>
+        <div class="toggle">
+          <button id="loginBtn" class="toggle-btn-inactive">Login</button>
+          <button id="signupBtn" class="toggle-btn-active">Sign Up</button>
+        </div>
+
+        <form>
+          <div class="form-section">
+            <div class="signup-input-group1">
+              <label class="input-label">Full Name*</label>
+              <div class="input-box">
+                <img
+                  src="../../assets/image/head-icon.svg"
+                  alt="head icon"
+                  class="input-icon"
+                />
+                <input type="text" placeholder="Queen" class="name" />
+              </div>
+            </div>
+
+            <div class="signup-input-group2">
+              <label class="input-label">Email Address*</label>
+              <div class="input-box">
+                <img
+                  src="../../assets/image/email--icon.svg"
+                  alt="email--icon icon"
+                  class="input-icon"
+                />
+                <input type="text" placeholder="hello@gmail.com" class="name" />
+              </div>
+            </div>
+
+            <div class="signup-input-group3">
+              <label class="input-label">Passward*</label>
+              <div class="input-box">
+                <img
+                  src="../../assets/image/padlock--icon.svg"
+                  alt="padlock--icon icon"
+                  class="input-icon"
+                />
+                <input type="text" placeholder="......" class="name" />
+              </div>
+            </div>
+            <h4>Password must be at least 6 characters long</h4>
+            <div class="action-btns">
+              <button class="help-btn-img" type="button">
+                <img
+                  src="../../assets/image/question-mark-circle-icon.svg"
+                  alt="help-icon"
+                  class="input-icon-img"
+                />
+                Help?
+              </button>
+              <button id="nextStepBtn" class="Create-account-btn" type="button">
+                Next Step
+              </button>
+            </div>
+
+            <div class="footer">
+              <h4>
+                By continuing, you agree to our
+                <span style="color: #6796fd"
+                  >Terms of Service & Privacy Policy </span
+                ><br />
+                © 2024 TaskMaster | Made for University Students
+              </h4>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../../pages/signup/signup.js"></script>
+    <!-- <script src="../../modules/module.js"></script>
+<script src="../../modules/auth.js"></script>
+<script src="../../assets/js/toggle.js"></script> -->
+  </body>
+</html>

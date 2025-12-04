@@ -1,0 +1,322 @@
+  body {
+     margin: 0;
+     padding: 0;
+     background-color: #f9fafb;
+     font-family: "poppins" sans-serif;
+  }
+
+
+  .grid-container {
+     display: grid;
+     grid-template-columns: 260px 1fr 1fr 1fr;
+     grid-template-rows: 0.2fr 3fr;
+     grid-template-areas:
+        "sidebar header  header   header "
+        "sidebar main main main";
+     /* using easy to understand notation */
+     height: 100vh;
+
+  }
+
+  /* header */
+
+  .header {
+     grid-area: header;
+     height: 70px;
+     background-color: #ced6dd;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 30px 0 30px;
+     box-shadow: 0 6px 7px-3px rgba(0, 0, 0, 0.35);
+     border-radius: 5px;
+  }
+
+  .header-text {
+
+     flex: content;
+     color: #4f5c6e;
+     font-size: 18px;
+     text-align: left;
+     justify-content: space-between;
+  }
+
+  /* .header-text {
+    color: #4f5c6e;
+    font-size: 18px;
+   */
+
+  /* sidebar-container */
+  .sidebar-container {
+     grid-area: sidebar;
+     background-color: #ffffff;
+     width: 260px;
+     height: 100%;
+     overflow-y: auto;
+     transition: all 0.5s;
+
+
+
+     /* SIDEBAR */
+     #sidebar {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+     }
+
+     /* HEADER */
+     .sidebar-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+     }
+
+     .sidebar-logo {
+        width: 35px;
+     }
+
+     .sidebar-title {
+        font-size: 20px;
+        color: #32475c;
+        font-weight: 600;
+     }
+
+     /* TOGGLER BUTTON */
+     .toggler {
+        background: none;
+        border: none;
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+     }
+
+     .toggler img {
+        width: 20px;
+     }
+
+     /* USER DISPLAY */
+     .user-profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: #ffffff10;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+     }
+
+     #userAvatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #4a6cf7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+     }
+
+     .user-info h4 {
+        margin: 0;
+        font-size: 16px;
+        color: #fff;
+     }
+
+     .user-info p {
+        margin: 0;
+        font-size: 13px;
+        opacity: 0.8;
+        color: #ddd;
+     }
+
+     .user-display {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        padding: 10px;
+        background: #f3f4f6;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        color: #4f5c6e;
+     }
+
+     #userInitial {
+        font-size: 24px;
+        font-weight: bold;
+     }
+
+     /* NAVIGATION ITEMS */
+     .sidebar-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+     }
+
+     .sidebar-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 10px;
+        cursor: pointer;
+        color: #4f5c6e;
+        border-radius: 8px;
+        transition: 0.3s;
+     }
+
+     .sidebar-item:hover {
+        background: #f3f4f6;
+     }
+
+     /* FOOTER - TO PUSH LOGOUT TO BOTTOM */
+     .sidebar-footer {
+        margin-top: auto;
+        padding-top: 20px;
+     }
+
+     .sidebar-link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 10px;
+        text-decoration: none;
+        color: #e63946;
+        font-weight: 500;
+     }
+
+     .sidebar-link:hover {
+        background: #fdecec;
+        border-radius: 8px;
+     }
+
+     /* COLLAPSED SIDEBAR */
+     .sidebar-collapsed {
+        width: 80px;
+     }
+
+     .sidebar-collapsed .sidebar-title,
+     .sidebar-collapsed .user-display,
+     .sidebar-collapsed span {
+        display: none;
+     }
+
+  }
+
+  /* main */
+  .main-container {
+     grid-area: main;
+     background-color: #f8f9fa;
+     overflow-y: auto;
+     padding: 20px 20px;
+
+  }
+
+  .main-tittle {
+     display: flex;
+     justify-content: space-between;
+  }
+
+  .main-card {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     gap: 20px;
+     margin: 20px 0;
+  }
+
+  .class {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding: 25px;
+     border-radius: 5px;
+  }
+
+  .card-one {
+     background-color:#ffffff;
+  }
+
+  .card-two {
+     background-color: #ffffff
+  }
+
+  .card-three {
+     background-color:#ffffff
+  }
+
+  .card-four {
+     background-color:#ffffff;
+  }
+
+  .card-inner {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+  }
+
+  .card-inner {
+     font-size: 45;
+  }
+
+  
+  .recent-tasks {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+     width: 100%;
+     height: 55vh;
+     margin-top: 20px;
+  }
+
+  .tasks-card {
+     background: #ffffff;
+     border-radius: 10px;
+     padding: 20px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     margin-bottom: 15px;
+  }
+
+  .card-title h3 {
+     font-size: 18px;
+     font-weight: 600;
+  }
+
+  .no-tasks-yet {
+     text-align: center;
+     padding: 40px 0;
+     opacity: 0.7;
+  }
+  .no-task-icon {
+  width: 80px;   /* increase size */
+  height: 80px;  /* you can adjust this */
+  margin-bottom: 10px;
+}
+
+
+  .no-tasks-yet h3 {
+     margin-top: 10px;
+     font-size: 16px;
+  }
+  form{
+   display: grid;
+   grid-template-rows: (1fr 1fr 1fr);
+    color: #06b6d4;
+     border-radius: 10px;
+     padding: 20px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+     align-items: center;
+     justify-content: center;
+     border-radius: 5px;
+     box-sizing: border-box;
+  }

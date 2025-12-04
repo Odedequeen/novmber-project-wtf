@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../pages/dashboard/dashboard.css" />
+    <link rel="stylesheet" href="../../components/input/input.css" />
+    <link rel="stylesheet" href="../../components/button/button.css" />
+    <link rel="stylesheet" href="../../components/footer/footer.css" />
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <!--Header-->
+      <header class="header">
+        <div class="meun-icon" onclick="opensidebar()">
+          <img
+            src="../../assets/image/clarity--menu-line.svg"
+            alt="meun-icon"
+          />
+        </div>
+        <p class="header-text">
+          Here's what's happening with your productivity today
+        </p>
+      </header>
+      <!-- end-header-->
+
+      <!--sidebar-->
+      <div class="sidebar-container">
+        <aside id="sidebar">
+          <!-- Sidebar Header -->
+
+          <div class="sidebar-header">
+            <img
+              src="../../assets/image/box-mark-image.svg"
+              alt="logo"
+              class="sidebar-logo"
+            />
+
+            <h3 class="sidebar-title">TaskMaster</h3>
+
+            <!-- Sidebar Toggle -->
+
+            <button class="toggler" onclick="toggleSidebar()">
+              <img src="../../assets/image/v--angle-up.svg" alt="toggler" />
+            </button>
+           </div>
+           <!-- TOP SECTION: LOGO + NAME + TOGGLER -
+
+            <-- USER INFO (AVATAR + EMAIL) -->
+             <div class="user-profile">
+             <div id="userAvatar"></div>
+              <div class="user-info">
+              <h4 id="userName">User Name</h4>
+              <p id="userEmail">user@example.com</p>
+              </div>
+             </div>
+
+          <!-- Navigation -->
+
+          <ul class="sidebar-nav">
+            <li class="sidebar-item">
+              <img src="../../assets/image/dashboard-img.svg" alt="img" /><span
+                >Dashboard</span
+              >
+            </li>
+
+            <li class="sidebar-item">
+              <img
+                src="../../assets/image/tasks-img-icon.svg"
+                alt="tasks-img"
+              />
+              <span>Tasks</span>
+            </li>
+            <li class="sidebar-item">
+              <img
+                src="../../assets/image/community--img.svg"
+                alt="community-img"
+              />
+              <span>Community</span>
+            </li>
+
+            <li class="sidebar-item">
+              <img
+                src="../../assets/image/expenses--dollar-img.svg"
+                alt="expenses-dolla-img"
+              />
+              <span>Expenses</span>
+            </li>
+            <li class="sidebar-item">
+              <img
+                src="../../assets/image/note-text-img.svg"
+                alt="/note-text-img"
+              />
+              <span>Notes</span>
+            </li>
+
+            <li class="sidebar-item">
+              <img
+                src="../../assets/image/settings-img.svg"
+                alt="settings-img"
+              />
+              <span>Settings</span>
+            </li>
+          </ul>
+
+          <div class="sidebar-footer">
+            <a href="#" class="sidebar-link">
+              <img src="../../assets/image/log-out-img.svg" alt="logout-img" />
+              <span>Logout</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+      <!--end-sidebar-->
+
+      <!--main-->
+      <div class="main-container">
+        <div class="main-tittle">
+          <h2>DASHOARD</h2>
+        </div>
+        <div class="main-card">
+          <div class="card-one">
+            <div class="card-inner">
+              <h3>Action Tasks</h3>
+              <img
+                src="../../assets/image/box-mark-image.svg"
+                alt="box"
+                class="Action Taskse"
+              />
+            </div>
+            <h1>0</h1>
+            <p>Completion</p>
+          </div>
+
+          <div class="card-two">
+            <div class="card-inner">
+              <h3>Total Expenses</h3>
+              <img
+                src="../../assets/image/expenses--dollar-img.svg"
+                alt=""
+                class=">Total Expenses"
+              />
+            </div>
+            <h1>$0.00</h1>
+            <p>This Period</p>
+          </div>
+
+          <div class="card-three">
+            <div class="card-inner">
+              <h3>Total Notes</h3>
+              <img
+                src="../../assets/image/note-text-img.svg"
+                alt=""
+                class="Total Notes"
+              />
+            </div>
+            <h1>0%</h1>
+            <p>Save notes</p>
+          </div>
+
+          <div class="card-four">
+            <div class="card-inner">
+              <h3>Completion Rate</h3>
+              <img
+                src="../../assets/image/completion-rate-img.svg"
+                alt=""
+                class="Completion Rate"
+              />
+            </div>
+            <h1>0$</h1>
+            <p>Task Completion</p>
+          </div>
+        </div>
+          
+        
+        <!-- Recent Tasks Section -->
+<div class="recent-tasks">
+
+  <!-- Recent Tasks Card -->
+  <div class="tasks-card">
+    <div class="card-title">
+      <img src="../../pages/dashboard/image/clock-img.svg" alt="Clock Icon">
+      <h3>Recent Tasks</h3>
+    </div>
+
+    <div class="no-tasks-yet">
+      <img class="no-task-icon" src="../../pages/dashboard/image/tabler--checkbox-img.svg" alt="No Tasks Icon">
+
+      <h3>No tasks yet</h3>
+    </div>
+  </div>
+
+
+  <!-- Quick Actions Card -->
+  <div class="tasks-card">
+    <div class="card-title">
+      <img src="../../pages/dashboard/image/completion-rate-img.svg" alt="Completion Rate Icon">
+      <h3>Quick Actions</h3>
+    </div>
+      <form action="quick"> 
+
+        <div class="create-new-task">
+          <div class="card-title">
+            <img class="new-task-icon" src="../../pages/dashboard/image/tabler--checkbox-img.svg" alt="new-task-icon">
+            <h4>Add a task to your list</h4>
+          </div>
+        </div>
+         <div class="track-expense">
+          <div class="card-title">
+          <img class="expense-icon" src="../../pages/dashboard/image/expenses--dollar-img.svg" alt="expense-icon">
+           <h3>Track Expense</h3>
+          <h4>Record a new expense</h4>
+          </div>
+        </div>
+         <div class="Write-Note">
+          <div class="card-title">
+            <img class="Note-icon" src="../../pages/dashboard/image/note-text-img.svg" alt="Write-Note">
+            <h3>Write-Note</h3>
+            <h4>Capture your thoughts </h4>
+          </div>
+         </div>
+         
+      </form>
+    
+
+
+  </div>
+
+</div>
+
+    
+ 
+    </div>
+
+    </div>
+
+        
+      
+    </main>
+    </div>
+    <script src="../../pages/dashboard/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+:root {
+   --background-color: #fff;
+   --task-master-color: #000;
+   --Create-account-color: #e4a100;
+   --help-color: #b5bdcc;
+   --text-color: #c5c9ce;
+   --text-decoration-color: #101828;
+   --blue-icon: #3254fa;
+
+
+   --active-tasks-color: #3254fa;
+
+   --total-notes-color: #00a63e;
+
+   --Completion-Rate-color: #4f39f6;
+
+   --Recent-Tasks-icon-image-color: #3c78fc;
+
+   _--tkotal-Notes-color: #00a63e;
+
+   --Quick-Actions-hovring-color: #06b6d4;
+
+   --logout-color: #c70007;
+
+-----------------------------------------------------------------------------------------------------------
+dashboard
+--main-background-color: #f9fafb;
+--sidebar-color: #ffffff
+--text-color:#101828-#4f5c6e
+
+}
